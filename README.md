@@ -18,6 +18,12 @@ This is a React-based shopping list application that allows users to create and 
 
 ## Installation
 
+Visit the live live version at:
+
+https://popiolekdawid.github.io/shopping-list/
+
+or install localy:
+
 1. Clone the repository:
 ```https://github.com/your-username/shopping-list.git```
 
