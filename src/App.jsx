@@ -10,17 +10,17 @@ function App() {
     [ 
         {
             "id": 1,
-            "name": "mleko", 
+            "name": "milk", 
             "category": "dairy", 
             "quantity": 1
         }, {
             "id": 2,
-            "name": "chleb", 
+            "name": "bread", 
             "category": "bread", 
             "quantity": 5
         }, {
             "id": 3,
-            "name": "pomarańcze", 
+            "name": "oranges", 
             "category": "fruits", 
             "quantity": 4
         } 
@@ -39,9 +39,9 @@ function App() {
 
   return (
     <div className='App'>
-      <Header title="Lista Zakupów"/>
+      <Header title="Your shopping list"/>
       <AddProduct onAdd={addProduct}/>
-      {products.length > 0 ? <Products products={products} onDelete={deleteProduct}/>:<p>Brak produktów</p>}
+      {products.length > 0 ? <Products products={products} onDelete={deleteProduct}/>:<p>There is no products to show</p>}
     </div>
   )
 }

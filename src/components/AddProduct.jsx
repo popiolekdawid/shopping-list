@@ -17,25 +17,25 @@ const AddProduct = ({ onAdd }) => {
         <form className='add-list' onSubmit={add}> 
     
             <div className='input-div'>
-                <label>Produkt</label>
-                <input type='text' placeholder='Nazwa produktu' value={name} onChange={(e) => setName(e.target.value)} required />
+                <label>Product</label>
+                <input type='text' placeholder='Product name' value={name} onChange={(e) => setName(e.target.value)} required />
             </div>
 
             <div className='input-div'>
-                <label>Kategoria</label>
+                <label>Category</label>
                 <select value={category} onChange={(e) => setCategory(e.target.value)}>
-                    <option value='fruits'>Owoce</option> 
-                    <option value='dairy'>Nabiał</option>
-                    <option value='bread'>Pieczywo</option>
+                    <option value='fruits'>Fruits</option> 
+                    <option value='dairy'>Dairy</option>
+                    <option value='bread'>Bread</option>
                 </select> 
             </div>
 
             <div className='input-div'>
-                <label>Ilość</label>
+                <label>Quantity</label>
                 <input type='number' placeholder='0' value={quantity} min="0" onChange={(e) => setQuantity(e.target.value)} /> 
             </div>
 
-            <input type='submit' className='btn' value='Dodaj' /> 
+            <input type='submit' className='btn' value='Add' /> 
         </form>
     ) 
 }
